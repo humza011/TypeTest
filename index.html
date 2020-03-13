@@ -1,26 +1,42 @@
 <!doctype html>
-
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
   <title>TypeSpeed</title>
+  
   <meta name="description" content="TypeSpeed">
   <meta name="author" content="Humza">
-
- 
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+ <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   
-  <div class="jumbotron">
-    <div class="row">
-      <strong>Type the below sentence in the text area provided</strong></div>
-      <br>
-    <p id="testText">The ham, green beans, mashed potatoes, and corn are gluten-free.
-    </p> 
-    <textarea type="text" id="freeText" class="form-control"></textarea>
-    <button type="submit" class="btn btn-primary" onclick="calcTime()">Submit</button>
+      
+  <div class="container">
+    <img src="keyboard.jpg" alt="keyboard" id="keyboardimg" style="width:100%;">
+    <div class="centered">Let's test your speed !!</div>
   </div>
+  
+  <div class="jumbotron" style="padding-top: 0;">
+  <br>
+  <p id="actualtxt">The ham, green beans, mashed potatoes, and corn are gluten-free.</p>
+  <div class="form-group">
+    <textarea id="enteredtxt" rows="5" class="form-control"> </textarea>
+  </div>
+    <div class="text-center">
+      <button id="tryagain" type="submit" class="btn btn-danger">Try Again</button>
+    </div>
+    
+  
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </body>
 </html>
